@@ -1,0 +1,326 @@
+/** @format */
+
+.awesome {
+  /* border: 1px solid red; */
+  font-size: 24px;
+  font-family: Proxima Nova ExtraBold, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.6px;
+  color: #aed8ea;
+  text-align: center;
+  margin-top: 12px;
+  min-height: 34px;
+  position: relative;
+}
+.explorediv {
+  display: flex;
+  font-weight: 100;
+  font-size: 20px;
+  color: #aed8ea;
+  /* border: 1px solid blue; */
+  margin-top: 30px;
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.explorediv span {
+  margin: 0%;
+  /* margin-top: 20px; */
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.main {
+  /* border: 1px solid red; */
+  width: auto;
+  height: 400px;
+  margin: 10px;
+  background: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png);
+}
+.trendingTag-container {
+  display: flex;
+  justify-content: space;
+  flex-direction: row;
+  /* margin: 20px; */
+  margin-bottom: 10px;
+  /* justify-content: end; */
+
+  /* display: flex;
+  justify-content: center; */
+  flex-wrap: wrap;
+  width: auto;
+  height: 200px;
+  border: 1px solid green;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tagname {
+  color: aliceblue;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.4px;
+  color: #fff;
+  text-transform: capitalize;
+  word-break: break-word;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.46;
+  letter-spacing: 0.4px;
+  /* color: hsla(0, 0%, 100%, 0.5); */
+}
+.tag2 {
+  /* border: 1px solid blue; */
+  /* padding-top: 10px; */
+  margin: 10px;
+  width: 106px;
+  height: 130px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 3px;
+  /* background-color: rgba(121, 67, 200, 0.8); */
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  background-image: url("./img/space.png");
+  cursor: pointer;
+}
+
+a:hover {
+  transition: transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+}
+
+.dropdown {
+  width: auto;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 36px;
+  min-width: 405px;
+}
+.dropdown span {
+  border: 1px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  font-weight: 600;
+  /* letter-spacing: 1.5px; */
+  text-align: right;
+  color: #babec4;
+  cursor: pointer;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+i {
+  color: #babec4;
+}
+
+/* .mostViral {
+} */
+.menu_bar {
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+  height: 36px;
+  /* min-width: 405px; */
+  background-color: rgb(83, 86, 93);
+  /* margin-top: 28px; */
+
+  /* border: 1px solid red; */
+}
+
+.menu_bar ul {
+  list-style: none;
+  display: flex;
+  background-color: rgb(83, 86, 93);
+}
+.menu_bar ul li {
+  /* justify-content: space-between; */
+
+  width: 200px;
+  height: 20px;
+  color: white;
+  position: relative;
+  font-weight: 400;
+  text-align: left;
+
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.dropdown_menu {
+  display: none;
+}
+.menu_bar ul li:hover .dropdown_menu {
+  display: block;
+  left: 0;
+  top: 100%;
+
+  /* border: 1px solid red; */
+  position: absolute;
+}
+
+.dropdown_menu ul {
+  display: block;
+}
+.dropdown_menu ul li {
+  padding: 10px;
+}
+
+
+
+.datalist {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  /* height: 50vh; */
+  display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px;
+}
+
+.card {
+  display: flexbox;
+  /* border: 1px solid blue; */
+  height: 250px;
+  width: 80%;
+  /* /* width: 20%; 
+  height: 180px;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  /* border-radius: 18px; */
+  /* background: green; */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  margin-top: 20px;
+}
+.card-image{
+  height: 60%;
+}
+.card-image img {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+
+  /* height: 173px; */
+  /* border: 1px solid teal; */
+  /* border-top-right-radius: 15px;
+  border-top-left-radius: 15px; */
+}
+
+.card-stats {
+  grid-area: stats;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; */
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  background-color: rgb(71, 74, 81);
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: wheat;
+}
+.title{
+  height: 20%;
+  text-align: center;
+}
+.title h3 {
+  text-align: left;
+  margin: 10px;
+
+  font-size: 16px;
+ color: white; 
+}
+
+.pagination-icons{
+  width: 40%;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  font-size: 50px;
+  justify-content: space-between;
+}
+
+
+/* changes */
+
+
+.mover {
+  /* background-color: rgb(23, 21, 68); */
+  border-radius: 3px;
+  margin-top: -5px;
+}
+
+p {
+  font-family: Proxima Nova Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* padding: 12px; */
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+  color: aliceblue;
+
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.4px;
+  color: #aed8ea;
+  /* background-repeat: repeat-x; */
+  /* background-position: 100% 0; */
+  /* flex-direction: column;
+  justify-content: flex-end; */
+}
+
+.img {
+  width: 90%;
+  height: 100px;
+  margin: 10px 30px 0px 0px;
+  border-radius: 10px;
+}
+
+.trending_tag {
+  /* border: 1px solid red; */
+
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+  margin-top: 1px;
+}
+.tag {
+  display: flex;
+  width: 90%;
+  /* margin-top: -60px; */
+  margin-left: 1.5%;
+  /* border: 1px solid red; */
+}
+.tag2 {
+  display: flex;
+  width: 130%;
+  flex-direction: row;
+  display: none;
+
+  margin-right: 25px;
+  /* border: 1px solid blue; */
+}
